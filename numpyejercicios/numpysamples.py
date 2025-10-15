@@ -1,4 +1,4 @@
-import numpy as np 
+#import numpy as np 
 #import pandas as pd 
 #import numpy
 
@@ -81,3 +81,41 @@ print(matriz)
 filtro = matriz[(matriz >= 40) & (matriz <= 60)]
 print("\nValores entre 40 y 60:")
 print(filtro)
+
+print('****************++++++++++++++++++++')
+
+x=np.array([[1,2],[3,4]])
+x=np.array([[10,20],[30,40]])
+
+print(x)
+print(y)
+print(x.shape)
+print(y.shape)
+print(x+y)
+print(np.add(x,y))
+print(x*y)
+print(np.dot(x,y))
+g=np.random.randint(1,100,(3,4))
+print(g)
+print(np.sum(g,axis=0))
+print(np.sum(g,axis=1))
+print(np.sum(g))
+
+print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
+
+x=np.array([[1,2], [3,4]])
+y=np.array([[10,20], [30,40]])
+
+print(x)
+print(x.T)
+
+newmatrix=np.vstack((x,y))
+print(newmatrix)
+print(newmatrix.shape)
+newmatrix=np.hstack(x,y)
+c=np.concatenate((x,y),axis=1)
+print(c)
+print(c.shape)
+
+
+
